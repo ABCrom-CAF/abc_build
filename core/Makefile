@@ -2670,7 +2670,7 @@ $(INTERNAL_OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) \
 	   $(if $(OEM_OTA_CONFIG), -o $(OEM_OTA_CONFIG)) \
 	   $(BUILT_TARGET_FILES_PACKAGE) $@
 
-CUSTOM_TARGET_PACKAGE := $(PRODUCT_OUT)/ABC_ROM_$(TARGET_PRODUCT)-$(ABC_VERSION).zip
+CUSTOM_TARGET_PACKAGE := $(PRODUCT_OUT)/ABC-CAF_$(TARGET_PRODUCT)-$(ABC_VERSION).zip
 
 .PHONY: otapackage bacon
 otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
@@ -2682,9 +2682,9 @@ bacon: otapackage
 	@echo "     ;MM:       MM    Yb .dP·      · "
 	@echo "    ,V^MM.      MM    dP dM·        "
 	@echo "   ,M  ·MM      MM···bg  MM"
-	@echo "   AbmmmqMA     MM    ·Y MM.           ____ ____ _  _  "
-	@echo "  A·     VML    MM    ,9 ·Mb.     ,·   |__/ |  | |\/| "
-	@echo ".AMA.   .AMMA  JMMmmmd9    ··bmmmd·    |  \ |__| |  |"
+	@echo "   AbmmmqMA     MM    ·Y MM.           ____ ____ ____  "
+	@echo "  A·     VML    MM    ,9 ·Mb.     ,·   |    |__| |__  "
+	@echo ".AMA.   .AMMA  JMMmmmd9    ··bmmmd·    |___ |  | |   "
 	@echo " "
 	@echo -e "Package complete: $(CUSTOM_TARGET_PACKAGE)"
 	@echo " "
